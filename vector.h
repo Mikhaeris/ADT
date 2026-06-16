@@ -8,8 +8,8 @@
  *     #include "<path>/vector.h"
  */
 
-#ifndef VECTOR_H_CENTRY
-#define VECTOR_H_CENTRY
+#ifndef VECTOR_H_SENTRY
+#define VECTOR_H_SENTRY
 
 #include <stddef.h>
 
@@ -49,9 +49,9 @@ void vec_pop_back_impl(void **vec);
 void vec_resize_impl(void **vec, size_t count);
 void vec_swap_impl(void **vec1, void **vec2);
 
-#endif /* VECTOR_H_CENTRY */
+#endif /* VECTOR_H_SENTRY */
 
-#ifdef VECTOR_IMPL_CENTRY
+#ifdef VECTOR_IMPL_SENTRY
 
 #include <stdint.h>
 #include <stdio.h>
@@ -264,4 +264,4 @@ void vec_swap_impl(void **vec1, void **vec2)
     *vec2     = tmp;
 }
 
-#endif /* VECTOR_IMPL_CENTRY */
+#endif /* VECTOR_IMPL_SENTRY */

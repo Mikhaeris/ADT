@@ -4,7 +4,7 @@
 
 #include <stddef.h>
 
-#define VECTOR_IMPL_CENTRY
+#define VECTOR_IMPL_SENTRY
 #include "../vector.h"
 
 #include "./lib/greatest.h"

@@ -41,7 +41,7 @@ Capacity grows geometrically (doubling), so a run of appends is amortized O(1).
 `vector.h` is header-only. Define `VECTOR_IMPL_CENTRY` in **exactly one** translation unit before including it; include it normally everywhere else.
 
 ```c
-#define VECTOR_IMPL_CENTRY   /* in one .c file only */
+#define VECTOR_IMPL_SENTRY   /* in one .c file only */
 #include "vector.h"
 
 #include <stdio.h>
